@@ -48,8 +48,7 @@ export default function App() {
         }
         }>Search a sub-reddit...</button>}
       </div>
-      <h1>LURKER</h1>
-
+      <h1 onClick={() => setSubReddit('aaronssecondapi')}>LURKER</h1>
 
       {displayForm && (
         <form onSubmit={submitHandler}>
