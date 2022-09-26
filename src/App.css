@@ -60,8 +60,8 @@ form {
   min-width: 250px;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  /* padding: 40px 50px 40px 50px; */
-  padding: 40px;
+  padding: 55px 50px 30px 50px;
+  /* padding: 40px; */
 
   display: flex;
   flex-flow: column nowrap;
@@ -128,11 +128,8 @@ h1 {
 }
 
 button {
-  /* font-weight: 700; */
   min-width: 15.5rem;
   padding: 0.5rem 1.1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   height: 39px;
   border: none;
   font-size: 15px;
@@ -145,12 +142,9 @@ button {
   letter-spacing: 1px;
   word-spacing: 3px;
   transition: 0.3s;
-  /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.653),
-    0 4px 6px -4px rgb(0 0 0 / 0.1); */
 }
 
 button:hover {
-  /* background: radial-gradient(circle at 3% 7.4%, rgba(0, 146, 243, 0.858) 0%, rgba(37, 113, 255, 0.87) 90%); */
   opacity: 0.8;
 }
 
@@ -240,22 +234,23 @@ a {
 }
 
 #delete-btn {
-  background: rgb(218, 218, 218);
+  background: rgba(218, 218, 218, 0.607);
   color: black;
   border-radius: 0;
   /* background: rgb(142, 143, 145); */
   min-width: 20px;
-  width: 30px;
+  width: 20px;
+  height: 20px;
   margin-top: 0;
-  height: 30px;
-  padding: 5px 10px;
-  margin-left: 50%;
-  margin-top: 2rem;
+  padding-left: 5.5px;
+  /* margin-left: 50%; */
+  margin-top: 1rem;
   box-shadow: none;
+  cursor: pointer;
 }
 
 #delete-btn:hover {
-  background-color: #ff2600;
+  background-color: #fe5a3e;
 }
 
 @media only screen and (max-width: 500px) {
@@ -292,7 +287,7 @@ button {
   color: rgb(249, 74, 74);
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 p {
@@ -302,7 +297,9 @@ p {
   /* margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 1rem; */
-  margin: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }
 
 

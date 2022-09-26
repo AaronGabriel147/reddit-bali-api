@@ -69,8 +69,29 @@ sub reddits:
 
 
 
-      {/* <p>View your favorite sub-reddits images</p> */}
+         {/* <p>A minimalistic reddit viewer.</p> */}
+      {/* <p>View your favorite sub-reddits, (images and titles only)</p> */}
 
 
 
 
+--------
+
+
+'You have entered an invalid sub-reddit.'
+
+
+
+---------------
+
+
+
+
+      // .then((x) => !error && setDisplayForm(false))
+      // .catch((y) => setDisplayForm(true))
+    // try {
+    //   await error && setDisplayForm(true);
+    //   await !error && setDisplayForm(false);
+    // } catch {
+    //   console.log('error')
+    // }

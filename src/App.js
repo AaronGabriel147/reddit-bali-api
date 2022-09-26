@@ -13,8 +13,16 @@ export default function App() {
   useEffect(() => {
     axios
       .get(`https://old.reddit.com/r/${subReddit}/.json?limit=20`)
-      .then((res) => { setData(res.data.data.children) })
-      .catch((err) => setError('You have entered an invalid sub-reddit.'));
+      .then((res) => {
+        setData(res.data.data.children)
+        setError('')
+        setDisplayForm(false)
+      })
+      .catch((err) => {
+        console.log(err)
+        setError('You have entered an invalid sub-reddit.')
+        setDisplayForm(true)
+      });
   }, [subReddit]);
 
 
@@ -23,25 +31,25 @@ export default function App() {
     setSubReddit(formData)
     e.target.reset()
     setFormData('')
-    setDisplayForm(false)
   }
+
 
   return (
     <div className="app">
       <div className="btn-cont">
-        {/* <button onClick={() => setSubReddit('balisong')}>Balisong</button> */}
-        <p onClick={() => setSubReddit('balisong')}>BALISONG</p>
         <p onClick={() => setSubReddit('spaceporn')}>SPACE</p>
         <p onClick={() => setSubReddit('historyporn')}>HISTORY</p>
         <p onClick={() => setSubReddit('interestingasfuck')}>INTERESTING AF</p>
         <p onClick={() => setSubReddit('mechanicalkeyboards')}>MECHANICAL KEYBOARDS</p>
-        <button id="search-btn" onClick={() => setDisplayForm(true)}>Search a sub-reddit*</button>
+        <p onClick={() => setSubReddit('balisong')}>BALISONG</p>
+        {!displayForm && <button id="search-btn" onClick={() => {
+          setDisplayForm(true)
+          setError('')
+        }
+        }>Search a sub-reddit...</button>}
       </div>
-
-
-
-
       <h1>LURKER</h1>
+
 
       {displayForm && (
         <form onSubmit={submitHandler}>
@@ -54,8 +62,10 @@ export default function App() {
           />
           <button>SUBMIT</button>
           <p id="error">{error && error}</p>
+          <h5 id="delete-btn" onClick={() => setDisplayForm(false)}>X</h5>
         </form>
       )}
+
 
       {
         data.length > 1 ? data.map((item, index) => {
