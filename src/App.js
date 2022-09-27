@@ -59,9 +59,9 @@ export default function App() {
       <FliesText
         cellRadius={.7}
         text="LURKER"
-        fontSize={120}
+        fontSize={90}
         cellWidth={0.02}
-        speed={2}
+        speed={4}
         dodge={true}
         dodgeY={0.5}
         dodgeSpread={0.08}
