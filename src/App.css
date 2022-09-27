@@ -258,22 +258,6 @@ a {
   background-color: #fe5a3e;
 }
 
-@media only screen and (max-width: 500px) {
-  .card {
-    padding: 5px 3px 30px 3px;
-    background: rgba(48, 48, 48, 0.678);
-
-    backdrop-filter: saturate(100%) blur(4px);
-    font-size: 1.1rem;
-    border: none;
-  }
-
-  #title {
-    font-size: 1.1rem;
-    font-weight: 900;
-  }
-}
-
 button {
   margin: 10px;
 }
@@ -303,6 +287,10 @@ p {
   margin-right: 1rem;
   margin-top: 1rem;
   text-shadow: .5px 1px 1px rgb(0, 0, 0);
+}
+
+#links:hover {
+  color: dodgerblue;
 }
 
 
@@ -336,4 +324,34 @@ p {
 
 #form-text {
   margin-bottom: 1rem;
+  cursor: auto;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .card {
+    padding: 5px 3px 30px 3px;
+    background: rgba(48, 48, 48, 0.678);
+
+    backdrop-filter: saturate(100%) blur(4px);
+    font-size: 1.1rem;
+    border: none;
+  }
+
+  #title {
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+
+  #links {
+    font-size: 1.1rem;
+    margin-left: .6rem;
+    margin-right: .6rem;
+    margin-top: 1rem;
+  }
+
+  #links:hover {
+    color: dodgerblue;
+  }
 }

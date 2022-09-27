@@ -41,15 +41,15 @@ export default function App() {
     <div className="app">
 
       <div className="btn-cont">
-        <p onClick={() => setSubReddit('all')}>ALL</p>
-        <p onClick={() => setSubReddit('spaceporn')}>SPACE</p>
-        <p onClick={() => setSubReddit('historyporn')}>HISTORY</p>
-        <p onClick={() => setSubReddit('interestingasfuck')}>INTERESTING AF</p>
-        <p onClick={() => setSubReddit('mechanicalkeyboards')}>MECHANICAL KEYBOARDS</p>
-        <p onClick={() => setSubReddit('balisong')}>BALISONG</p>
-        <p onClick={() => setSubReddit('dataisbeautiful')}>DATA IS BEAUTIFUL</p>
-        <p onClick={() => setSubReddit('derp')}>DERP</p>
-        <p onClick={() => setSubReddit('deepdream')}>DEEP DREAM</p>
+        <p id="links" onClick={() => setSubReddit('all')}>ALL</p>
+        <p id="links" onClick={() => setSubReddit('spaceporn')}>SPACE</p>
+        <p id="links" onClick={() => setSubReddit('historyporn')}>HISTORY</p>
+        <p id="links" onClick={() => setSubReddit('interestingasfuck')}>INTERESTING AF</p>
+        <p id="links" onClick={() => setSubReddit('mechanicalkeyboards')}>MECHANICAL KEYBOARDS</p>
+        <p id="links" onClick={() => setSubReddit('balisong')}>BALISONG</p>
+        <p id="links" onClick={() => setSubReddit('dataisbeautiful')}>DATA IS BEAUTIFUL</p>
+        <p id="links" onClick={() => setSubReddit('derp')}>DERP</p>
+        <p id="links" onClick={() => setSubReddit('deepdream')}>DEEP DREAM</p>
 
 
 
