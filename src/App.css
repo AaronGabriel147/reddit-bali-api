@@ -61,8 +61,8 @@ form {
   min-width: 250px;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  padding: 55px 50px 30px 50px;
-  /* padding: 40px; */
+  /* padding: 55px 50px 30px 50px; */
+  padding: 20px;
 
   display: flex;
   flex-flow: column nowrap;
@@ -171,7 +171,7 @@ input {
   outline: 0;
   font-size: 1.0625rem;
   padding: 5px 0 5px 11px;
-
+  min-width: 15.5rem;
   /* background: transparent; */
   background-color: #ebebeb;
   color: black;
@@ -332,4 +332,8 @@ p {
 #search-btn:hover {
   /* background: radial-gradient(circle at 3% 7.4%, rgba(0, 146, 243, 0.858) 0%, rgba(37, 113, 255, 0.87) 90%); */
   opacity: 0.8;
+}
+
+#form-text {
+  margin-bottom: 1rem;
 }

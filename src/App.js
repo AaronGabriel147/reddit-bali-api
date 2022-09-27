@@ -10,21 +10,21 @@ export default function App() {
   const [subReddit, setSubReddit] = useState('aaronssecondapi');
   const [formData, setFormData] = useState('');
   const [error, setError] = useState('');
-  const [displayForm, setDisplayForm] = useState(false);
+  // const [displayForm, setDisplayForm] = useState(true);
 
 
   useEffect(() => {
     axios
-      .get(`https://old.reddit.com/r/${subReddit}/.json?limit=20`)
+      .get(`https://old.reddit.com/r/${subReddit}/.json?limit=30`)
       .then((res) => {
         setData(res.data.data.children)
         setError('')
-        setDisplayForm(false)
+        // setDisplayForm(false)
       })
       .catch((err) => {
         console.log(err)
         setError('You have entered an invalid sub-reddit.')
-        setDisplayForm(true)
+        // setDisplayForm(true)
       });
   }, [subReddit]);
 
@@ -41,16 +41,27 @@ export default function App() {
     <div className="app">
 
       <div className="btn-cont">
+        <p onClick={() => setSubReddit('all')}>ALL</p>
         <p onClick={() => setSubReddit('spaceporn')}>SPACE</p>
         <p onClick={() => setSubReddit('historyporn')}>HISTORY</p>
         <p onClick={() => setSubReddit('interestingasfuck')}>INTERESTING AF</p>
         <p onClick={() => setSubReddit('mechanicalkeyboards')}>MECHANICAL KEYBOARDS</p>
         <p onClick={() => setSubReddit('balisong')}>BALISONG</p>
+        <p onClick={() => setSubReddit('dataisbeautiful')}>DATA IS BEAUTIFUL</p>
+        <p onClick={() => setSubReddit('derp')}>DERP</p>
+        <p onClick={() => setSubReddit('deepdream')}>DEEP DREAM</p>
+
+
+
+
+        {/* 
         {!displayForm && <button id="search-btn" onClick={() => {
           setDisplayForm(true)
           setError('')
         }
-        }>Search a sub-reddit...</button>}
+        }>Search a sub-reddit...</button>} */}
+
+
       </div>
       {/* <h1 onClick={() => setSubReddit('aaronssecondapi')}>LURKER</h1> */}
 
@@ -66,27 +77,30 @@ export default function App() {
         dodgeY={0.5}
         dodgeSpread={0.08}
         fill="dodgerblue"
-        fontFamily="roboto"
+        fontFamily="sans-serif"
         fontWeight="900"
       />
 
 
 
 
-      {displayForm && (
-        <form onSubmit={submitHandler}>
-          <input
-            name="subreddit"
-            placeholder="Enter sub reddit..."
-            value={formData}
-            onChange={(e) => setFormData(e.target.value)}
-            required
-          />
-          <button>SUBMIT</button>
-          <p id="error">{error && error}</p>
-          <h5 id="delete-btn" onClick={() => setDisplayForm(false)}>X</h5>
-        </form>
-      )}
+      {/* {displayForm && ( */}
+      <form onSubmit={submitHandler}>
+
+        <p id="form-text">Enter a sub-reddit</p>
+
+        <input
+          name="subreddit"
+          placeholder="Enter a sub reddit..."
+          value={formData}
+          onChange={(e) => setFormData(e.target.value)}
+          required
+        />
+        <button>SUBMIT</button>
+        <p id="error">{error && error}</p>
+        {/* <h5 id="delete-btn" onClick={() => setDisplayForm(false)}>X</h5> */}
+      </form>
+      {/* )} */}
 
 
       {
