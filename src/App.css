@@ -173,7 +173,7 @@ input {
   padding: 5px 0 5px 11px;
   min-width: 15.5rem;
   /* background: transparent; */
-  background-color: #ebebeb;
+  background-color: #ffffffb7;
   color: black;
   margin-bottom: 1.5rem;
   border: 3px solid rgba(99, 99, 99, 0.81);
@@ -354,4 +354,10 @@ p {
   #links:hover {
     color: dodgerblue;
   }
+}
+
+#dots {
+  margin-left: -.3rem;
+  margin-right: -.3rem;
+  color: rgb(136, 136, 136);
 }
