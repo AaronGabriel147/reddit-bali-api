@@ -1,3 +1,20 @@
+      
+      
+      
+      
+     <FliesText
+      text="Hello World"
+      fontSize={120}
+      fontWeight="bold"
+      cellWidth={0.02}
+      fill="#2f2f2f"
+      speed={2}
+    />
+      
+      
+      --------------
+      
+      
       <header header className="App-header" >
 Image of galaxy:
     

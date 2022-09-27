@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+import { FliesText } from 'react-text-fun';
+
+
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -36,6 +39,7 @@ export default function App() {
 
   return (
     <div className="app">
+
       <div className="btn-cont">
         <p onClick={() => setSubReddit('spaceporn')}>SPACE</p>
         <p onClick={() => setSubReddit('historyporn')}>HISTORY</p>
@@ -48,7 +52,26 @@ export default function App() {
         }
         }>Search a sub-reddit...</button>}
       </div>
-      <h1 onClick={() => setSubReddit('aaronssecondapi')}>LURKER</h1>
+      {/* <h1 onClick={() => setSubReddit('aaronssecondapi')}>LURKER</h1> */}
+
+
+
+      <FliesText
+        cellRadius={.7}
+        text="LURKER"
+        fontSize={120}
+        cellWidth={0.02}
+        speed={2}
+        dodge={true}
+        dodgeY={0.5}
+        dodgeSpread={0.08}
+        fill="dodgerblue"
+        fontFamily="roboto"
+        fontWeight="900"
+      />
+
+
+
 
       {displayForm && (
         <form onSubmit={submitHandler}>
