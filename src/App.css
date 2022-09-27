@@ -362,3 +362,14 @@ p {
   }
 
 }
+
+
+
+.select {
+  /* border: solid red; */
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 20rem;
+  color: black;
+  background-color: #282c34;
+}

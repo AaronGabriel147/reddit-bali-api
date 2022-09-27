@@ -4,13 +4,29 @@ import './App.css';
 import Header from './components/Header';
 import Links from './components/Links';
 import ImageCards from './components/ImageCards';
+import Select from 'react-select';
 
+const options = [
+  { value: 'balisong', label: 'balisong', color: "#000000" },
+  { value: 'derp', label: 'derp', color: "#000000" },
+  { value: 'spaceporn', label: 'spaceporn', color: "#000000" },
+];
+
+const colorStyles = {
+  control: (styles) => ({ ...styles, backgroundColor: "white" }),
+  option: (styles, { data, isDisabled, isFocused, isSelected }) => {
+    return { ...styles, color: data.color };
+  },
+}
 
 export default function App() {
   const [data, setData] = useState([]);
   const [subReddit, setSubReddit] = useState('aaronssecondapi');
   const [formData, setFormData] = useState('');
   const [error, setError] = useState('');
+
+
+
 
   useEffect(() => {
     axios
@@ -36,10 +52,22 @@ export default function App() {
 
   return (
     <div className="app">
-      <Links setSubReddit={setSubReddit} />
+      {/* <Links setSubReddit={setSubReddit} /> */}
       <Header setSubReddit={setSubReddit} />
 
-      <form onSubmit={submitHandler}>
+
+      <Select
+        className="select"
+        // value={selectedOption}
+        onChange={(optionSelected) => setSubReddit(optionSelected.value)}
+        options={options}
+        styles={colorStyles}
+      />
+
+
+
+
+      {/* <form onSubmit={submitHandler}>
         <p id="form-text">Enter a sub-reddit</p>
         <input
           name="subreddit"
@@ -50,7 +78,7 @@ export default function App() {
         />
         <button>SUBMIT</button>
         <p id="error">{error && error}</p>
-      </form>
+      </form> */}
 
       <ImageCards data={data} />
     </div >
