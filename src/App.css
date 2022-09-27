@@ -289,6 +289,12 @@ p {
   text-shadow: .5px 1px 1px rgb(0, 0, 0);
 }
 
+#dots {
+  margin-left: -.3rem;
+  margin-right: -.3rem;
+  color: rgb(136, 136, 136);
+}
+
 #links:hover {
   color: dodgerblue;
 }
@@ -354,10 +360,5 @@ p {
   #links:hover {
     color: dodgerblue;
   }
-}
 
-#dots {
-  margin-left: -.3rem;
-  margin-right: -.3rem;
-  color: rgb(136, 136, 136);
 }

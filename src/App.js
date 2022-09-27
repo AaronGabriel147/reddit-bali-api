@@ -42,21 +42,14 @@ export default function App() {
 
       <div className="btn-cont">
         <p d="links" onClick={() => setSubReddit('all')}>ALL</p>
-        <p id="dots">•</p>
-        <p id="links" onClick={() => setSubReddit('spaceporn')}>SPACE</p>
-        <p id="dots">•</p>
+        {/* <p id="dots">•</p> */}
+        <p id="links" onClick={() => setSubReddit('spaceporn')}>APACE</p>
         <p id="links" onClick={() => setSubReddit('historyporn')}>HISTORY</p>
-        <p id="dots">•</p>
         <p id="links" onClick={() => setSubReddit('interestingasfuck')}>INTERESTING AF</p>
-        <p id="dots">•</p>
         <p id="links" onClick={() => setSubReddit('mechanicalkeyboards')}>MECHANICAL KEYBOARDS</p>
-        <p id="dots">•</p>
         <p id="links" onClick={() => setSubReddit('balisong')}>BALISONG</p>
-        <p id="dots">•</p>
         <p id="links" onClick={() => setSubReddit('dataisbeautiful')}>DATA IS BEAUTIFUL</p>
-        <p id="dots">•</p>
         <p id="links" onClick={() => setSubReddit('derp')}>DERP</p>
-        <p id="dots">•</p>
         <p id="links" onClick={() => setSubReddit('deepdream')}>DEEP DREAM</p>
 
 
