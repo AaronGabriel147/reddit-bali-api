@@ -121,7 +121,6 @@ body {
   border-top: solid rgba(200, 200, 200, 0.356) 1px;
   /* border: solid rgb(248, 53, 53); */
   /* padding-top: 2rem; */
-
   min-width: 100%;
   margin-top: 15rem;
   display: flex;
@@ -132,13 +131,13 @@ body {
   /* margin-bottom: -50px; */
   margin-top: auto;
   word-spacing: 3px;
+  margin-bottom: -50px;
 }
 
 #footer-txt {
   color: rgb(184, 184, 184);
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: -50px;
   cursor: pointer;
 }
 
