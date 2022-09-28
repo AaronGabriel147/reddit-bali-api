@@ -31,8 +31,6 @@
 /* ___________________________________ */
 
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
@@ -89,29 +87,64 @@ form {
   line-height: 1.5;
   font-family: 'Roboto', sans-serif;
   /* border: 3px solid rgb(71, 0, 212); */
-  color: white;
+  color: rgb(243, 243, 243);
+}
+
+html {
+  height: 100%
 }
 
 body {
-  height: 100vh;
-  background-attachment: fixed;
-  margin-bottom: 9rem;
-  background-position: center;
-  min-height: -webkit-fill-available;
-  background-color: #262627;
-  background-color: #0c0c0ce0;
+  /* height: 100vh; */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 
+
+  background-attachment: fixed;
+  background-position: center;
+  /* min-height: -webkit-fill-available; */
+  /* background-color: #262627; */
+  background-color: #0c0c0ce0;
   /* background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png"); */
   /* background-image: url('https://firebasestorage.googleapis.com/v0/b/newestever-3f6b9.appspot.com/o/ttt.jpg?alt=media&token=9693f557-7348-401d-857d-7b0c0b890c87'); */
   /* background-size: 45%; */
   /* background-repeat: no-repeat; */
-
   /* background-image: url("https://www.transparenttextures.com/patterns/climpek.png"); */
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   /* background-image: url("https://www.transparenttextures.com/patterns/gplay.png"); */
 }
 
+
+
+.footer {
+  border-top: solid rgba(200, 200, 200, 0.356) 1px;
+  /* border: solid rgb(248, 53, 53); */
+  /* padding-top: 2rem; */
+
+  min-width: 100%;
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  /* does this fix the mobile issues? */
+  /* margin-bottom: -50px; */
+  margin-top: auto;
+  word-spacing: 3px;
+}
+
+#footer-txt {
+  color: rgb(184, 184, 184);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
 .app {
+  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,15 +394,4 @@ p {
     color: dodgerblue;
   }
 
-}
-
-
-
-.select {
-  /* border: solid red; */
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  width: 20rem;
-  color: black;
-  background-color: #282c34;
 }

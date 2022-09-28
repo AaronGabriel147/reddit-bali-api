@@ -8,6 +8,30 @@ https://lurker-five.vercel.app/
 
 
 
+---------------------------------------------
+
+const options = [
+  { value: 'balisong', label: 'balisong', color: "#000000" },
+  { value: 'derp', label: 'derp', color: "#000000" },
+  { value: 'spaceporn', label: 'spaceporn', color: "#000000" },
+];
+
+const colorStyles = {
+  control: (styles) => ({ ...styles, backgroundColor: "white" }),
+  option: (styles, { data, isDisabled, isFocused, isSelected }) => {
+    return { ...styles, color: data.color };
+  },
+}
+// import Select from 'react-select';
+
+{/* This could be like a 'more modal' */}
+      {/* <Select
+        className="select"
+        // value={selectedOption}
+        onChange={(optionSelected) => setSubReddit(optionSelected.value)}
+        options={options}
+        styles={colorStyles}
+      /> */}
 
 
 
