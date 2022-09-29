@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Links from './components/Links';
 import ImageCards from './components/ImageCards';
 import Footer from './components/Footer';
+// import little from './little.png'
 
 export default function App() {
   const [data, setData] = useState([]);
@@ -38,7 +39,12 @@ export default function App() {
   return (
     <div className="app">
       <Links setSubReddit={setSubReddit} />
+
+      {/* <img id="little" src={little} alt="lurking man in the dark" /> */}
+
       <Header setSubReddit={setSubReddit} />
+
+
 
       <form onSubmit={submitHandler}>
         <p id="form-text">Enter a sub-reddit</p>
@@ -54,6 +60,15 @@ export default function App() {
       </form>
 
       <ImageCards data={data} />
+
+      {
+        data.length > 2
+          ?
+          <h3 id="scroll-to-top" onClick={() => setSubReddit('aaronssecondapi')}>^</h3>
+          :
+          ''
+      }
+
       <Footer setSubReddit={setSubReddit} />
     </div >
   );
