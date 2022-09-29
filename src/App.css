@@ -104,6 +104,9 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-color: #0c0c0ce0;
+  /* background-color: #000000; */
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+
 }
 
 
@@ -365,6 +368,8 @@ p {
     backdrop-filter: saturate(100%) blur(4px);
     font-size: 1.1rem;
     border: none;
+    border-top: 1px solid rgba(200, 200, 200, 0.349);
+    border-bottom: 1px solid rgba(200, 200, 200, 0.349);
   }
 
   #title {
@@ -408,11 +413,21 @@ p {
 
 #scroll-to-top:hover {
   color: rgb(39, 39, 39);
-  background-color: #6f00ffc5;
+  background-color: #6200ff;
 }
 
 
 h6 {
   font-weight: 100;
   font-size: 1rem;
+}
+
+#view-on-reddit {
+  color: #0971f8;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 2rem;
+  background-color: #0000001e;
+  padding: 10px;
+  border-radius: 9px;
 }
