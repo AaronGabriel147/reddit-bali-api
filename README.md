@@ -4,23 +4,13 @@ https://lurker-five.vercel.app/
 
 
 
-
-
-BELOW, TO DELETE LATER
-
 --------------------------------------------
-  /* background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png"); */
 
 
-  /* min-height: -webkit-fill-available; */
-  /* background-color: #262627; */
-  background-color: #0c0c0ce0;
-  /* background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png"); */
-  /* background-image: url('https://firebasestorage.googleapis.com/v0/b/newestever-3f6b9.appspot.com/o/ttt.jpg?alt=media&token=9693f557-7348-401d-857d-7b0c0b890c87'); */
-  /* background-size: 45%; */
-  /* background-repeat: no-repeat; */
-  /* background-image: url("https://www.transparenttextures.com/patterns/climpek.png"); */
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-  /* background-image: url("https://www.transparenttextures.com/patterns/gplay.png"); */
+# About Lurker
 
+Lurker is a React web app that searches any sub-reddit and returns real time images, titles, and a link to the original post. This is a much faster and more user friendly way to view images posts on reddit. 
 
+Lurker is approx 90% complete, if time allows I plan on adding an async feature that waits for an API GET request to complete, and if that request has a length over 0, it will scroll down to the first image, thus eliminating an unnecessary step for the user. 
+
+Some possible future features, Framer animations, and user log ins to save favorite sub reddits. 
