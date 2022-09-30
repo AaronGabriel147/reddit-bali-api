@@ -1,4 +1,4 @@
-# DEPLOYMENT:
+# Deployment:
 
 https://lurker-five.vercel.app/
 
@@ -7,9 +7,9 @@ https://lurker-five.vercel.app/
 --------------------------------------------
 
 
-# About Lurker
+# About Lurker:
 
-Lurker is a React web app that searches any sub-reddit and returns real time images, titles, and a link to the original post. This is a much faster and more user friendly way to view images posts on reddit. 
+Lurker is a React web app that searches any sub-reddit and returns real time images, titles, and a links to the original post. This is a much faster and more user friendly way to view image posts on reddit. 
 
 Lurker is approx 90% complete, if time allows I plan on adding an async feature that waits for an API GET request to complete, and if that request has a length over 0, it will scroll down to the first image, thus eliminating an unnecessary step for the user. 
 
