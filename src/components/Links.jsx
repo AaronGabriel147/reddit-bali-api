@@ -11,7 +11,7 @@ export default function Links({ setSubReddit }) {
             <p id="links" onClick={() => setSubReddit('mechanicalkeyboards')}>MECHANICAL KEYBOARDS</p>
             <p id="links" onClick={() => setSubReddit('balisong')}>BALISONG</p>
             <p id="links" onClick={() => setSubReddit('dataisbeautiful')}>DATA IS BEAUTIFUL</p>
-            <p id="links" onClick={() => setSubReddit('derp')}>DERP</p>
+            <p id="links" onClick={() => setSubReddit('cats')}>CATS</p>
             <p id="links" onClick={() => setSubReddit('deepdream')}>DEEP DREAM</p>
         </div>
     )
