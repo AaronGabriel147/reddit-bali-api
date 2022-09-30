@@ -1,36 +1,3 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 190s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-/* ___________________________________ */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
@@ -91,7 +58,6 @@ form {
 }
 
 
-
 html {
   height: 100%
 }
@@ -108,7 +74,6 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
 
 }
-
 
 .footer {
   margin-top: auto;
@@ -131,7 +96,6 @@ body {
   position: absolute;
 }
 
-
 #footer-txt {
   /* color: rgb(184, 184, 184); */
   color: black;
@@ -149,7 +113,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 
 h1 {
   font-weight: 100;
@@ -187,7 +150,6 @@ button:hover {
   width: 70%;
 }
 
-
 input {
   font-family: sans-serif, Arial, Helvetica;
   border: 2px solid rgb(71, 71, 71);
@@ -195,19 +157,15 @@ input {
   font-size: 1.0625rem;
   padding: 5px 0 5px 11px;
   min-width: 15.5rem;
-  /* background: transparent; */
   background-color: #ffffffb7;
   color: black;
   margin-bottom: 1.5rem;
   border: 3px solid rgba(99, 99, 99, 0.81);
-  /* margin-top: 1rem; */
-  /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.653), 0 4px 6px -4px rgb(0 0 0 / 0.1); */
 }
 
 input:focus {
   padding: 5px 0 5px 11px;
   border-width: 3px;
-  /* border-image: linear-gradient(to right, rgb(0, 0, 255), rgb(140, 0, 255), rgb(0, 208, 204)); */
   border-image: radial-gradient(circle at 3% 7.4%,
       #892eff 0%,
       #6f00ff 90%);
@@ -220,7 +178,6 @@ input:focus {
   max-width: 900px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  /* box-shadow: 0px 1px 9px #605f5f; */
 }
 
 .card {
@@ -228,12 +185,10 @@ input:focus {
   min-width: 300px;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  /* padding: 40px 50px 40px 50px; */
   padding: 15px 15px 35px 15px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  /* align-content: center; */
   border: 1px solid rgba(200, 200, 200, 0.521);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.653),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -252,7 +207,6 @@ input:focus {
   align-items: center;
   margin-left: 1rem;
   margin-right: 1rem;
-  /* border: solid blue; */
 }
 
 a {
@@ -264,7 +218,6 @@ a {
   background: rgba(218, 218, 218, 0.607);
   color: black;
   border-radius: 0;
-  /* background: rgb(142, 143, 145); */
   min-width: 20px;
   width: 20px;
   height: 20px;
@@ -315,12 +268,10 @@ p {
   text-shadow: .5px 1px 1px rgb(0, 0, 0);
 }
 
-
 #links:hover {
   color: #6f00ff;
   font-weight: 600;
 }
-
 
 #search-btn {
   min-width: 8rem;
@@ -349,7 +300,6 @@ p {
   margin-bottom: 1rem;
   cursor: auto;
 }
-
 
 
 @media only screen and (max-width: 500px) {
@@ -406,7 +356,6 @@ p {
   color: rgb(39, 39, 39);
   background-color: #6200ff;
 }
-
 
 h6 {
   font-weight: 100;

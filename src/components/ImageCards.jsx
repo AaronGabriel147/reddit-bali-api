@@ -1,8 +1,5 @@
 import React from 'react';
 
-
-// res.data.data.children[0].data.permalink
-
 export default function ImageCards({ data }) {
 
     return (

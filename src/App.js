@@ -19,7 +19,6 @@ export default function App() {
       .then((res) => {
         setData(res.data.data.children)
         setError('')
-        console.log('$$$', res.data.data.children[0].data.permalink)
       })
       .catch((err) => {
         console.log(err)
