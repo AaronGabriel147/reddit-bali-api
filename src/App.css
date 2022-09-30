@@ -170,6 +170,7 @@ input:focus {
       #892eff 0%,
       #6f00ff 90%);
   border-image-slice: 1;
+  background-color: #ffffff;
 }
 
 .line-separator {
