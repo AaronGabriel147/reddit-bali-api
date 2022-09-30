@@ -414,8 +414,8 @@ h6 {
 }
 
 #view-on-reddit {
-  color: #0971f8;
-  font-weight: 500;
+  color: #6200ff;
+  /* font-weight: 500; */
   font-size: .9rem;
   margin-top: 2rem;
   background-color: #0000001e;
