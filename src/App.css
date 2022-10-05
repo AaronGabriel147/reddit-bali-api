@@ -93,6 +93,7 @@ body {
 #little {
   width: 70px;
   right: 0;
+  bottom: 0;
   /* border: solid rgb(226, 81, 81); */
   position: absolute;
 }
