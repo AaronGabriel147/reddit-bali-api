@@ -37,8 +37,9 @@ form {
   border: 1px solid rgb(96, 96, 96);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.653),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
-  background: rgba(255, 255, 255, 0.054);
-  backdrop-filter: saturate(10%) blur(2px);
+  /* background: rgba(255, 255, 255, 0.054); */
+  /* backdrop-filter: saturate(10%) blur(2px); */
+  background: rgba(61, 61, 61, 0.801);
 }
 
 * {
@@ -117,7 +118,7 @@ body {
 h1 {
   font-weight: 100;
   font-size: 5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   text-shadow: 1px 1px 3px rgb(0, 0, 0);
   font-family: 'Lato', sans-serif;
   cursor: pointer;
@@ -157,17 +158,18 @@ input {
   font-size: 1.0625rem;
   padding: 5px 0 5px 11px;
   min-width: 15.5rem;
-  background-color: #ffffffb7;
+  background-color: #ffffff;
   color: black;
   margin-bottom: 1.5rem;
-  border: 3px solid rgba(99, 99, 99, 0.81);
+  /* border: 3px solid rgba(99, 99, 99, 0.81); */
+  border: 3px solid #6f00ff;
 }
 
 input:focus {
   padding: 5px 0 5px 11px;
   border-width: 3px;
   border-image: radial-gradient(circle at 3% 7.4%,
-      #892eff 0%,
+      #7308ff 0%,
       #6f00ff 90%);
   border-image-slice: 1;
   background-color: #ffffff;
@@ -271,7 +273,7 @@ p {
 
 #links:hover {
   color: #6f00ff;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 #search-btn {
@@ -360,7 +362,7 @@ p {
 
 h6 {
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 #view-on-reddit {
