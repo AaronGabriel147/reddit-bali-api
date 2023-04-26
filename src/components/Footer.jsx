@@ -8,7 +8,7 @@ export default function Footer({ setSubReddit }) {
         <>
             <div className="footer">
                 <h2 id="footer-txt" onClick={() => setSubReddit('aarons3rdapi')}>
-                    Always lurking, never posting
+                    Always Lurking
                 </h2>
                 <img id="little" src={little} alt="lurking man in the dark" />
             </div>
