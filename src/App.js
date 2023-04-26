@@ -8,9 +8,10 @@ import Footer from './components/Footer';
 
 export default function App() {
   const [data, setData] = useState([]);
-  const [subReddit, setSubReddit] = useState('balisongclones');
+  const [subReddit, setSubReddit] = useState('balisong');
   const [formData, setFormData] = useState('');
-  const [error, setError] = useState('');
+  const [title, setTitle] = useState('Enter a sub');
+
 
 
   useEffect(() => {
@@ -18,40 +19,31 @@ export default function App() {
       .get(`https://old.reddit.com/r/${subReddit}/.json?limit=100`)
       .then((res) => {
         setData(res.data.data.children)
-        setError('')
+        setTitle(subReddit)
       })
-      .catch((err) => {
-        console.log(err)
-        setError('You have entered an invalid sub-reddit.')
-      });
+      .catch((err) => console.log(err));
   }, [subReddit]);
 
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    setSubReddit(formData)
-    e.target.reset()
-    setFormData('')
-  }
+
+  {console.log("@@@@@@@@@@@ subreddit", subReddit)}
+  {console.log("@@@@@@@@@@@ title", title)}
+
 
 
   return (
     <div className="app">
       <Links setSubReddit={setSubReddit} />
-      {/* <Header setSubReddit={setSubReddit} /> */}
 
-      {/* <form onSubmit={submitHandler}>
-        <p id="form-text">Enter a sub-reddit</p>
-        <input
-          name="subreddit"
-          placeholder="Search..."
-          value={formData}
-          onChange={(e) => setFormData(e.target.value)}
-          required
-        />
-        <button>SUBMIT</button>
-        <p id="error">{error && error}</p>
-      </form> */}
+      {/* <h1>r/{title}</h1> */}
+
+        {
+          title == "aarons3rdapi" ? <h1>Click a sub^</h1> : <h1>r/{title}</h1>
+        }  
+
+
+      <Header setSubReddit={setSubReddit} />
+
 
       <ImageCards data={data} />
 

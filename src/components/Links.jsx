@@ -7,7 +7,7 @@ export default function Links({ setSubReddit }) {
             <p id="links" onClick={() => setSubReddit('balisong')}>Balisong</p>
             <p id="links" onClick={() => setSubReddit('balisongsale')}>Balisong Sales</p>
             <p id="links" onClick={() => setSubReddit('balisongclones')}>Balisong Clones</p>
-            <p id="links" onClick={() => setSubReddit('aarons3rdapi')}>None</p>
+            <p id="links" onClick={() => setSubReddit('aarons3rdapi')}>Clear Images [X]</p>
         </div>
     )
 }
