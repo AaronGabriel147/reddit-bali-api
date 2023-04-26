@@ -9,7 +9,6 @@ import Footer from './components/Footer';
 export default function App() {
   const [data, setData] = useState([]);
   const [subReddit, setSubReddit] = useState('balisong');
-  const [formData, setFormData] = useState('');
   const [title, setTitle] = useState('');
 
 
