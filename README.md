@@ -1,3 +1,3 @@
 # Deployment:
 
-place url here
+https://reddit-balisong.vercel.app/
