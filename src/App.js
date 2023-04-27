@@ -34,19 +34,15 @@ export default function App() {
       <Links setSubReddit={setSubReddit} />
 
 
-      {/* {
-        title == "aarons3rdapi" ? <h1>Click a sub^</h1> : <h1>r/{title}</h1>
-      }   */}
-
-
 
       {
         title === "aarons3rdapi" && <h1>Click a sub^</h1>
       }  
 
       {
-         title !== "" && <h1>r/{title}</h1>
+        (title !== "" && title !== "aarons3rdapi") && <h1>r/{title}</h1>
       }
+
 
 
 
